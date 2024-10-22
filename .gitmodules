@@ -1,0 +1,3 @@
+[submodule "asr-utils"]
+	path = asr-utils
+	url = https://github.com/AI4Bharat/asr-preprocessor-wasm.git
