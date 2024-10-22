@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev-rs": "cd asr-utils && wasm-pack build --debug --target bundler",
+    "build-rs": "cd asr-utils && wasm-pack build --release --target bundler",
     "dev": "next dev -H 0.0.0.0 --port 8080",
     "build": "next build",
     "start": "next start -H 0.0.0.0 --port 8080",
@@ -17,7 +19,7 @@
     "@mui/material": "^6.1.4",
     "@mui/material-nextjs": "^6.1.4",
     "copy-webpack-plugin": "^12.0.2",
-    "indicasr-wasm": "file:../indicasr-wasm/pkg",
+    "indicasr-wasm": "file:asr-utils/pkg",
     "next": "14.2.15",
     "react": "^18",
     "react-audio-voice-recorder": "^2.2.0",
