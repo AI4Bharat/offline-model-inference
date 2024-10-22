@@ -2,21 +2,32 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
-
+Install [Rust](https://www.rust-lang.org/tools/install) and [Wasm-Pack](https://rustwasm.github.io/wasm-pack/book/quickstart.html).
+ 
+First, build the Preprocessor:
 ```bash
-npm run dev
+npm run debug-build-rs # debug build, with better browser console error logging
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run release-build-rs # optimised build for production
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install all packages, including the newly built wasm package:
+```bash
+npm i
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run the development server:
+```bash
+npm run dev
+```
+
+To run the production server:
+```bash
+npm run build
+npm start
+```
+
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
