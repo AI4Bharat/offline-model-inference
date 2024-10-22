@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev-rs": "cd asr-utils && wasm-pack build --debug --target bundler",
-    "build-rs": "cd asr-utils && wasm-pack build --release --target bundler",
+    "debug-build-rs": "cd asr-utils && wasm-pack build --debug --target bundler",
+    "release-build-rs": "cd asr-utils && wasm-pack build --release --target bundler",
     "dev": "next dev -H 0.0.0.0 --port 8080",
     "build": "next build",
     "start": "next start -H 0.0.0.0 --port 8080",
