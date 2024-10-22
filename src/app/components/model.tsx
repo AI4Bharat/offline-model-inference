@@ -114,7 +114,7 @@ export default function Model() {
     // "-acodec pcm_s16le -ar 44100 -ac 2"
     await ffmpeg.exec([
       "-i",
-      "input.webm",
+      `input.${inputType}`,
       "-acodec",
       "pcm_s16le",
       "-ar",
@@ -134,7 +134,6 @@ export default function Model() {
     const transcodedArrayBuffer = await transcodeFile(arrayBuffer, inputType);
 
     const byteArray = new Uint8Array(transcodedArrayBuffer);
-    console.log(byteArray);
 
     const processed_data = wasm.run_preprocessor(byteArray);
     const logits = await runModel(processed_data);
