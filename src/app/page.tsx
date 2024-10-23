@@ -52,7 +52,7 @@ export default function Home() {
           </main>
           <footer className={styles.footer}>
             <a
-              href="https://github.com/AI4Bharat/offline-model-ui"
+              href="https://github.com/AI4Bharat/offline-model-inference"
               target="_blank"
               rel="noopener noreferrer"
             >
