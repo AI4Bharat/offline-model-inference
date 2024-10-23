@@ -6,6 +6,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Install [Rust](https://www.rust-lang.org/tools/install) and [Wasm-Pack](https://rustwasm.github.io/wasm-pack/installer/).
 
+Switch to Rust 1.81.0:
+```bash
+rustup default 1.81.0
+```
+
 Clone the repository:
 ```bash
 git clone --recurse-submodules https://github.com/AI4Bharat/offline-model-inference.git
