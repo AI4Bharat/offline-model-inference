@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-Install [Rust](https://www.rust-lang.org/tools/install) and [Wasm-Pack](https://rustwasm.github.io/wasm-pack/book/quickstart.html).
+Install [Rust](https://www.rust-lang.org/tools/install) and [Wasm-Pack](https://rustwasm.github.io/wasm-pack/installer/).
 
 Clone the repository:
 ```bash
