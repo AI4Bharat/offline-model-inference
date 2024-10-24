@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). You can use this code to run Conformer based ONNX models directly in the browser with no need for an internet connection.
 
+[Live demo](https://browser-demo.ai4bharat.org/)
+
 ## Getting Started
 
 Install [Rust](https://www.rust-lang.org/tools/install) and [Wasm-Pack](https://rustwasm.github.io/wasm-pack/installer/).
